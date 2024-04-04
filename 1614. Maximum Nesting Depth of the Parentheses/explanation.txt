@@ -1,0 +1,5 @@
+This solution moves through the string from left to right counting the number of open parentheses and because we are looking at the max nesting depth we also care about the number of closing parentheses.
+Because, of this whenever we close a parenthesis we check to see if the current depth is greater than the maximum so far.
+After we finish the loop we return the maximum number we found so far.
+the time complexity of this solution is O(n) because we move through the string a single time.
+the space complexity of this solution is o(1) because no matter the size of the input string we only ever create 3 constantly sized variables cur, max, and i.
