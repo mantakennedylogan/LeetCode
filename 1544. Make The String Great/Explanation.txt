@@ -1,0 +1,15 @@
+There are multiple ways of solving this problem we can either remove characters from the input string or build a new String.
+
+If we were to remove the characters from the input string we would start at the first index of the string and check to see if the next character is the same letter but a different case.
+If we need to remove them we take a substring before and after the part of the string that we want to remove and concatenate them together to replace the original input string.
+We then need to continue to check the values that were just made to be next to each other and repeat the process.
+Once we find a pair that doesn't need to be replaced we move on to the next character.
+The time complexity of this solution is O(n) because we will only ever do a linear amount of calculations.
+The space complexity of this solution is O(1) because we only make an iterator.
+
+If we want to build a new string we first add the first value into the string builder.
+Then for each subsequent character, if they are the same letter but in different cases, we remove the character from the string builder.
+If they are not the same we add the new value to the string builder.
+If the string builder is ever empty we just add the current value to the string builder.
+The time complexity of this solution is O(n) because we are looking at every value of the input string only once.
+The space complexity of this solution is O(n) because, in the worst-case scenario, we need to create a string of the same size as the input string.
