@@ -1,5 +1,5 @@
 This solution uses the turtle and the hare method. The hare is the current location we are looking at in the array and the turtle is the next value in the array that only contains one copy of each number.
-When the hare finds a value that we want to keep that is different from the one in front of it we copy that value onto the location of the turtle and increment the turtle. Otherwise, we increment just the hare to look at the next input.
+When the hare finds a value that we want to keep that is different from the one in front of it we copy that value onto the location of the turtle and increment the turtle. Otherwise, we increment just hare to look at the next input.
 Because of this method, we write over the values that we don't want with values that we do want, and the value of the turtle is the length of our new array.
 The time complexity is O(n) because we only move through the array once.
 The space complexity is O(1) because no matter the size of the array we utilize the same amount of memory.
