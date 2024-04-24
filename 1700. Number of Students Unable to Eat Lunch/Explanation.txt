@@ -1,0 +1,6 @@
+We start by counting the number of students who want circle sandwiches and the number who want square sandwiches and store them in their own variables.
+We then go through the sandwiches and every time we see a circle sandwich we decrease the number of circle students and do the same for square sandwiches and square students.
+this works because we have a circular queue, a student of the right type will eventually make it to the start of the queue.
+If at any time we have a sandwich and we don't have a student that wants to eat that type of sandwich we return the number of students of the other type.
+The time complexity of this solution is O(n) because we move through the sandwich and student arrays once.
+The space complexity of this solution is O(1) because no matter the size of the input array we only ever create 2 constantly sized variables.
